@@ -1,0 +1,13 @@
+bienImmobilier(refBien,nbrePieces,nbreChambres,nbreSalleDeBains,nbreCuisines,sousBassement,surface)
+maison(refBien,surfaceTerrain) hérite de bienImmobilier
+appartement(refBien,etage,ascenceur) hérite de bienImmobilier
+client(refClient,nom,prenom,dateNaissance,adresse,telephone,dateInscritpion,eMail,login,passwd)
+proprietaire(refProprietaire,nom,prenom,login,passwd)
+contrat(refClient,refProprietaire,refBien,type)
+agence(refAgence,adresse)
+agentImmobilier(refAgent,refAgence,nom,prenom)
+
+recherche(refClient,type,maxPrix,minPrix,minSurface,maxSurface,nbrePiece,region)
+location(refBien,refProprietaire,loyer)
+vente(refBien,refProprietaire,prixInitial,marge,fraisAgence)
+creneauVisite(refBien,refAgent,refClient,dateVisite)
