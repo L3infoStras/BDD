@@ -130,7 +130,27 @@ create table vente
 	prixInitial integer not null,
 	marge integer not null,
 	fraisAgence integer not null,
+	enVenteDepuis date not null,
+	vendu varchar2(3) not null,
 	primary key (refBien, refProprietaire, refPersonnel),
+	foreign key (refBien) references bienImmobilier on delete cascade,
+	foreign key (refProprietaire) references proprietaire on delete	cascade,
+	foreign key (refPersonnel) references personnelAgence on delete cascade
+);
+
+create table archive
+(
+	refBien integer not null,
+	refProprietaire integer not null,
+	refPersonnel integer not null,
+	prixInitial integer not null,
+	marge integer not null,
+	fraisAgence integer not null,
+	enVenteDepuis date not null,
+	vendu varchar2(3) not null,
+	benefice integer not null,
+	dateVente date not null,
+	primary key (refBien, dateVente),
 	foreign key (refBien) references bienImmobilier on delete cascade,
 	foreign key (refProprietaire) references proprietaire on delete	cascade,
 	foreign key (refPersonnel) references personnelAgence on delete cascade

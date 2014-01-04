@@ -154,28 +154,28 @@ insert into location
 values (2,2,440);
 
 insert into vente 
-values (5,3,1,15000,1000,1500);
+values (5,3,1,15000,1000,1500,to_date('2013/11/24','YYYY/MM/DD'),'oui');
 
 insert into vente 
-values (4,3,1,15000,1000,1500);
+values (4,3,1,15000,1000,1500,to_date('2013/11/24','YYYY/MM/DD'),'oui');
 
 insert into vente 
-values (3,3,1,15000,1000,1500);
+values (3,3,1,15000,1000,1500,to_date('2013/12/14','YYYY/MM/DD'),'oui');
 
 insert into vente
-values (6,1,1,50000,1500,10000);
+values (6,1,1,50000,1500,10000,to_date('2013/11/14','YYYY/MM/DD'),'non');
 
 insert into vente
-values (7,1,1,50000,1500,10000);
+values (7,1,1,50000,1500,10000,to_date('2013/11/29','YYYY/MM/DD'),'non');
 
 insert into vente
-values (8,1,1,50000,1500,10000);
+values (8,1,1,50000,1500,10000,to_date('2013/12/07','YYYY/MM/DD'),'non');
 
 insert into vente
-values (9,1,1,50000,1500,10000);
+values (9,1,1,50000,1500,10000,to_date('2013/12/20','YYYY/MM/DD'),'non');
 
 insert into vente
-values (10,1,1,50000,1500,10000);
+values (10,1,1,50000,1500,10000,to_date('2013/10/24','YYYY/MM/DD'),'non');
 
 
 
