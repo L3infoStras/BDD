@@ -179,14 +179,14 @@ values (10,1,1,50000,1500,10000,to_date('2013/10/24','YYYY/MM/DD'),'non');
 
 
 insert into creneauVisite
-values (1,1,1,to_date('2013/12/29 14:15:00','YYYY/MM/DD HH:MM:SS'));
+values (1,1,1,to_date('2013/12/29 14:15:00','YYYY/MM/DD HH24:MM:SS'));
 
 insert into creneauVisite
-values (1,1,3,to_date('2013/12/29 14:15:00','YYYY/MM/DD HH:MM:SS'));
+values (1,1,3,to_date('2013/12/29 14:15:00','YYYY/MM/DD HH24:MM:SS'));
 
 insert into creneauVisite
-values (2,2,4,to_date('2013/11/29 15:00:00','YYYY/MM/DD HH:MM:SS'));
+values (2,2,4,to_date('2013/11/29 15:00:00','YYYY/MM/DD HH24:MM:SS'));
 
 insert into creneauVisite
-values (1,3,2,to_date('2013/12/29 14:15:00','YYYY/MM/DD HH:MM:SS'));
+values (1,3,2,to_date('2013/12/29 14:15:00','YYYY/MM/DD HH24:MM:SS'));
 

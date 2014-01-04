@@ -1,5 +1,7 @@
 drop table maison;
 
+drop table archive;
+
 drop table appartement;
 
 drop table contrat;
@@ -23,3 +25,4 @@ drop table client;
 drop table proprietaire;
 
 drop table adresse;
+
